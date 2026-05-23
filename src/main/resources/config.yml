@@ -1,0 +1,82 @@
+database:
+  type: sqlite # sqlite | mysql
+  sqlite:
+    file: heartvault.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: heartvault
+    username: root
+    password: ""
+    useSSL: false
+    properties: {}
+
+storage:
+  persistentBank: true
+  maxStoredHearts: 200.0
+  maxStoredEffects: 256
+  maxEffectDurationSeconds: 36000
+  maxEffectAmplifier: 4
+  allowAbsorptionExtraction: true
+  overheal:
+    enabled: true
+    vanillaMaxHearts: 20.0
+    decayPerSecond: 0.5
+
+cooldowns:
+  extractSeconds: 12
+  applySeconds: 2
+  depositSeconds: 1
+  withdrawSeconds: 1
+  combatRestrictionSeconds: 8
+
+combat:
+  blockApplyWhileCombatTagged: true
+  blockExtractWhileCombatTagged: false
+  combatTagSeconds: 15
+
+visuals:
+  actionbarEnabled: true
+  bossbarEnabled: true
+  bossbarColor: YELLOW
+  bossbarStyle: SOLID
+  particlesEnabled: true
+  soundsEnabled: true
+  hexColors: true
+
+items:
+  extractor:
+    heartSyringe:
+      material: FERMENTED_SPIDER_EYE
+      customModelData: 61001
+      displayName: "<gradient:#ff2d2d:#ffbb2d>Heart Syringe</gradient>"
+    soulFlask:
+      material: GLASS_BOTTLE
+      customModelData: 61002
+      displayName: "<gradient:#a855f7:#38bdf8>Soul Flask</gradient>"
+  stored:
+    goldenHeartCapsule:
+      material: GOLD_NUGGET
+      customModelData: 62001
+      displayName: "<gradient:#ffd700:#ff8c00>Golden Heart Capsule</gradient>"
+    bloodRegenOrb:
+      material: MAGMA_CREAM
+      customModelData: 62002
+      displayName: "<gradient:#ff0033:#ff6b6b>Blood Regen Orb</gradient>"
+    infernoEssence:
+      material: BLAZE_POWDER
+      customModelData: 62003
+      displayName: "<gradient:#ff4d00:#ffd000>Inferno Essence</gradient>"
+    resistanceTotem:
+      material: TOTEM_OF_UNDYING
+      customModelData: 62004
+      displayName: "<gradient:#00e5ff:#ffffff>Resistance Totem</gradient>"
+    speedSerum:
+      material: SUGAR
+      customModelData: 62005
+      displayName: "<gradient:#00ff87:#00c3ff>Speed Serum</gradient>"
+    voidShield:
+      material: AMETHYST_SHARD
+      customModelData: 62006
+      displayName: "<gradient:#6d28d9:#111827>Void Shield</gradient>"
+

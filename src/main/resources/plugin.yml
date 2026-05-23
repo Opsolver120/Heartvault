@@ -1,0 +1,30 @@
+name: HeartVault
+version: ${version}
+main: com.heartvault.HeartVaultPlugin
+api-version: "1.21"
+folia-supported: true
+authors: ["HeartVault"]
+softdepend: [PlaceholderAPI, Vault, MMOItems, Oraxen, ItemsAdder]
+commands:
+  heartvault:
+    description: HeartVault main command
+    aliases: [hv]
+    usage: /<command>
+permissions:
+  heartvault.use:
+    default: true
+  heartvault.extract:
+    default: true
+  heartvault.bank:
+    default: true
+  heartvault.apply:
+    default: true
+  heartvault.admin:
+    default: op
+  heartvault.admin.give:
+    default: op
+  heartvault.admin.reload:
+    default: op
+  heartvault.admin.debug:
+    default: op
+

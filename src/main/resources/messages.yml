@@ -1,0 +1,23 @@
+prefix: "<gradient:#ffd700:#ff6b6b>HeartVault</gradient> <gray>»</gray> "
+
+errors:
+  noPermission: "<red>You don't have permission.</red>"
+  playerOnly: "<red>Players only.</red>"
+  cooldown: "<red>You're on cooldown for <gold>{seconds}s</gold>.</red>"
+  inCombat: "<red>You can't do that while in combat.</red>"
+  noEffects: "<gray>No extractable effects found.</gray>"
+  invalidNumber: "<red>Invalid number.</red>"
+  notEnoughHearts: "<red>Not enough stored heart energy.</red>"
+
+extract:
+  opened: "<gray>Select effects to extract.</gray>"
+  done: "<green>Extracted <gold>{count}</gold> effects.</green>"
+
+apply:
+  done: "<green>Applied <gold>{name}</gold>.</green>"
+
+bank:
+  opened: "<gray>Heart Vault opened.</gray>"
+  deposit: "<green>Deposited <gold>{hearts}</gold> hearts.</green>"
+  withdraw: "<green>Withdrew <gold>{hearts}</gold> hearts.</green>"
+

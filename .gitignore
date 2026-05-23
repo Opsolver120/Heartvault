@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+.gradle/
+build/
+*.log
+hs_err_pid*
+
