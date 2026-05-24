@@ -277,7 +277,7 @@ public final class ExtractionService implements Listener {
         if (type.equals(PotionEffectType.FIRE_RESISTANCE)) {
             return "infernoEssence";
         }
-        if (type.equals(PotionEffectType.DAMAGE_RESISTANCE)) {
+        if (type.equals(PotionEffectType.RESISTANCE)) {
             return "resistanceTotem";
         }
         if (type.equals(PotionEffectType.SPEED)) {

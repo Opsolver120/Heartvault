@@ -29,8 +29,7 @@ public final class Text {
         return miniMessage.deserialize(line, TagResolver.resolver(resolvers));
     }
 
-    public static Placeholder p(String key, String value) {
+    public static TagResolver p(String key, String value) {
         return Placeholder.parsed(key, value == null ? "" : value);
     }
 }
-

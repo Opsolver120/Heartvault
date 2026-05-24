@@ -89,7 +89,7 @@ public final class VaultService implements Listener {
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
             PlayerVault vault = repository.load(player.getUniqueId());
             cache.put(player.getUniqueId(), vault);
-            player.getScheduler().run(plugin, task -> applyPermanentHearts(player, vault.permanentHearts()), retired -> {});
+            player.getScheduler().run(plugin, task -> applyPermanentHearts(player, vault.permanentHearts()), () -> {});
         });
     }
 

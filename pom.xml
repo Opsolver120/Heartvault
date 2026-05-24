@@ -39,12 +39,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>net.milkbowl.vault</groupId>
-            <artifactId>VaultAPI</artifactId>
-            <version>1.7</version>
-            <scope>provided</scope>
-        </dependency>
+        <!-- VaultAPI removed to avoid dependency resolution failure -->
 
         <dependency>
             <groupId>com.zaxxer</groupId>
@@ -114,4 +109,3 @@
         </resources>
     </build>
 </project>
-
